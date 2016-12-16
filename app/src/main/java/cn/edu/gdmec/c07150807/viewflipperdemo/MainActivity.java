@@ -2,6 +2,7 @@ package cn.edu.gdmec.c07150807.viewflipperdemo;
 
 
 import android.os.Bundle;
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector
     private ViewFlipper viewFlipper=null;
     private static final int FLING_MIN_DISTANCE=100;
     private static final int FLING_MIN_VELOCITY=200;
-    private MainActivity mActivity=null;
+    private Activity mActivity = null;
     private Animation rInAnim,rOutAnim,lInAnim,lOutAnim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
